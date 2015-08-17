@@ -689,7 +689,7 @@
 
                 that.destroy();
 				
-                that.obj.append('<img class="croppedImg" src="' + response.url + '">');
+                that.obj.append('<img class="croppedImg" src="' + response.url + '" style="width: 100%; height: 100%;">');
                 if (that.options.outputUrlId !== '') { $('#' + that.options.outputUrlId).val(response.url); }
 
                 that.croppedImg = that.obj.find('.croppedImg');
