@@ -7,14 +7,25 @@ $imgUrl = $_POST['imgUrl'];
 $imgInitW = $_POST['imgInitW'];
 $imgInitH = $_POST['imgInitH'];
 // resized sizes
-$imgW = $_POST['imgW'];
+$p = $imgW/400*100;
+$imgW = $p/100*$imgInitW;
+
 $imgH = $_POST['imgH'];
+$p = $imgH/248*100;
+$imgH = $p/100*$imgInitH;
+
 // offsets
 $imgY1 = $_POST['imgY1'];
 $imgX1 = $_POST['imgX1'];
 // crop box
 $cropW = $_POST['cropW'];
+$p = $cropW/400*100;
+$cropW = $p/100*$imgInitW;
+
 $cropH = $_POST['cropH'];
+$p = $cropH/248*100;
+$cropH = $p/100*$imgInitH;
+
 // rotation angle
 $angle = $_POST['rotation'];
 
