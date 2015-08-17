@@ -16,7 +16,13 @@ $imgH = $p/100*$imgInitH;
 
 // offsets
 $imgY1 = $_POST['imgY1'];
+$p = $imgY1/400*100;
+$imgY1 = $p/100*$imgInitW;
+
 $imgX1 = $_POST['imgX1'];
+$p = $imgX1/248*100;
+$imgX1 = $p/100*$imgInitH;
+
 // crop box
 $cropW = $_POST['cropW'];
 $p = $cropW/400*100;
